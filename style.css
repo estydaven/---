@@ -1742,3 +1742,8 @@ div.hidden.btn-item {
         padding: 50px 10px 34px 10px;
     }
 }
+
+
+.dn{
+    display: none;
+}
