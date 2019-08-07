@@ -1629,10 +1629,7 @@ div.hidden.btn-item {
         font-size: 9px;
     }
 
-    .btn-channels button {
-        /*width: 64px;*/
-
-    }
+    
     .purpose__link:after{
         width: 83%;
     }
@@ -1697,11 +1694,6 @@ div.hidden.btn-item {
 
 }
 
-@-moz-document url-prefix() {
-    .btn-channels {
-        width: 100%;
-    }
-}
 
 .dev-footer {
     text-align: center;
@@ -1743,12 +1735,19 @@ div.hidden.btn-item {
     .purpose__button_big{
         width: 100%;
     }
-}
-@media (max-width: 360px){
-    .light{
+   
+    .light {
+        padding-right: 0px;
         font-size: 12px;
     }
+    .light__dot {
+        padding-left: 13px;
+    }
+    .light__dot:before {
+        left: 0px;
+    }
 }
+
 @media (max-width: 320px){
     
     .price {        
@@ -1772,16 +1771,7 @@ div.hidden.btn-item {
     .socials{
         padding: 50px 10px 34px 10px;
     }
-    .light {
-        padding-right: 0px;
-        font-size: 11px;
-    }
-    .light__dot {
-        padding-left: 13px;
-    }
-    .light__dot:before {
-        left: 0px;
-    }
+    
 }
 
 
