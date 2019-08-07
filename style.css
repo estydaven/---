@@ -235,6 +235,19 @@ img{
     line-height: 22px;
     color: #38384F;
     font-weight: 600;
+    box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
+    outline: 1px solid;
+  outline-color: rgba(255, 255, 255, .5);
+  outline-offset: 0px;
+  text-shadow: none;
+  transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+.purpose__button:hover{
+    border: 1px solid;
+  box-shadow: inset 0 0 20px rgba(255, 255, 255, .5), 0 0 20px rgba(255, 255, 255, .2);
+  outline-color: rgba(255, 255, 255, 0);
+  outline-offset: 15px;
+  text-shadow: 1px 1px 2px #427388; 
 }
 .purpose__button_big{
     width: 318px;
@@ -250,9 +263,10 @@ padding: 0 10px;
     letter-spacing: 3px;
     text-transform: uppercase;
     color: #FFFFFF;
+    transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
 }
 .purpose__link:hover{
-    color:#fff;
+    color:#4DE7A6;
     text-decoration: none;
 }
 .purpose__link:after{
@@ -1611,7 +1625,7 @@ div.hidden.btn-item {
         width: 83%;
     }
     .services__price{
-        padding: 13px 5px 13px 22px;
+        padding: 13px 5px 13px 10px;
     }
     .light{
         padding-right: 3px;
@@ -1718,6 +1732,11 @@ div.hidden.btn-item {
         width: 100%;
     }
 }
+@media (max-width: 360px){
+    .light{
+        font-size: 12px;
+    }
+}
 @media (max-width: 320px){
     
     .price {        
@@ -1740,6 +1759,16 @@ div.hidden.btn-item {
     }
     .socials{
         padding: 50px 10px 34px 10px;
+    }
+    .light {
+        padding-right: 0px;
+        font-size: 11px;
+    }
+    .light__dot {
+        padding-left: 13px;
+    }
+    .light__dot:before {
+        left: 0px;
     }
 }
 
